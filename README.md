@@ -1,4 +1,4 @@
-```markdown
+
 # Email Server Documentation
 
 This document provides a comprehensive guide to setting up and using the Node.js email server. This server leverages Nodemailer for email sending, Express for API endpoints, and includes features like rate limiting, email validation, and professional templating to ensure secure and reliable email delivery.
