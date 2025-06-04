@@ -27,7 +27,7 @@ This document provides a comprehensive guide to setting up and using the Node.js
      - [Rate Limiting](#rate-limiting)  
 11. [License](#license)  
 
----
+
 
 ## 1. Introduction
 This Node.js email server provides a robust and secure way to send transactional and notification emails. It's designed with best practices in mind, including:
@@ -38,7 +38,6 @@ This Node.js email server provides a robust and secure way to send transactional
 - **Rate Limiting**: Protects against abuse and helps maintain a good sending reputation.  
 - **Scalability**: Built with Nodemailer's connection pooling in mind for higher volumes.  
 
----
 
 ## 2. Features
 - **Secure SMTP Integration**: Configurable with various SMTP providers.  
@@ -51,14 +50,13 @@ This Node.js email server provides a robust and secure way to send transactional
 - **Health Check Endpoint**: For monitoring server status.  
 - **Environment Variable Configuration**: Securely manages sensitive information.  
 
----
 
 ## 3. Prerequisites
 Before you begin, ensure you have the following installed:  
 - **Node.js**: v14.x or higher (LTS recommended).  
 - **npm**: (Comes with Node.js).  
 
----
+
 
 ## 4. Setup Guide
 
@@ -104,7 +102,7 @@ Configure DNS records for SPF, DKIM, and DMARC. Example:
 - **DKIM**: Add the public key to your DNS.  
 - **DMARC**: `v=DMARC1; p=quarantine; rua=mailto:dmarc-agg-reports@your_domain.com`  
 
----
+
 
 ## 5. Running the Server
 Start the server:  
@@ -112,7 +110,7 @@ Start the server:
 node server.js
 ```
 
----
+
 
 ## 6. API Endpoints
 
@@ -149,26 +147,26 @@ Checks server health.
   { "status": "healthy", "timestamp": "2025-06-04T13:10:00.000Z" }
   ```
 
----
+
 
 ## 7. Email Service Provider (SMTP) Configuration
 - **Recommended**: Use dedicated services like SendGrid, Mailgun, AWS SES.  
 - **Testing**: Gmail can be used for testing but is not recommended for production.  
 
----
+
 
 ## 8. Security Considerations
 - Use environment variables for sensitive data.  
 - Enable HTTPS for production.  
 - Implement proper input validation and rate limiting.  
 
----
+
 
 ## 9. Troubleshooting
 - **Emails not arriving**: Check spam folders, DNS records, and SMTP logs.  
 - **Rate limit exceeded**: Wait for the reset window.  
 
----
+
 
 ## 10. Customization
 
@@ -181,5 +179,5 @@ Update the `spamKeywords` array in `validateEmailContent`.
 ### Rate Limiting
 Adjust `windowMs` and `max` in the rate limiter configuration.  
 
----
+
 
