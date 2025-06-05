@@ -432,3 +432,7 @@ The `emailLimiter` configuration can be adjusted:
 * **`message`**: The error message returned when the limit is exceeded.
 
 Adjust these values in the `app.js` (or `server.js`) file based on your application's expected traffic and security needs.
+
+### Resource
+- Generate DKIM - https://dkimcore.org/tools/
+  
